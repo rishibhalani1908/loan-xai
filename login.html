@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login</title>
+    <style>
+        body {
+            margin:0;
+            font-family:Arial;
+            background: linear-gradient(135deg,#ff9a9e,#667eea);
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            height:100vh;
+        }
+        .box {
+            background:rgba(255,255,255,0.2);
+            padding:30px;
+            border-radius:15px;
+            text-align:center;
+            backdrop-filter:blur(10px);
+        }
+        input,button {
+            margin:10px;
+            padding:10px;
+            width:90%;
+            border:none;
+            border-radius:5px;
+        }
+        button {
+            background:#ff4b2b;
+            color:white;
+        }
+    </style>
+</head>
+<body>
+
+<div class="box">
+    <h2>Login</h2>
+    <form method="POST" action="/login">
+        <input type="text" name="username" placeholder="Username">
+        <input type="password" name="password" placeholder="Password">
+        <button>Login</button>
+    </form>
+    <p>admin / 1234</p>
+</div>
+
+</body>
+</html>
